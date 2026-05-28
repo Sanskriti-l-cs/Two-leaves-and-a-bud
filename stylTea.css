@@ -1,0 +1,67 @@
+/* Import Tailwind's base layers */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom theme color definitions */
+:root {
+  --brand-navy: #1e1b4b;
+  --brand-blue: #0096db;
+}
+
+body{
+    background-image: url(./TeaJour\ Bg.png);
+}
+/* Custom abstracted component classes */
+.announcement-bar {
+    background-color: #1e1b4b;
+  @apply bg-[blue] text-white text-xs font-bold tracking-wider uppercase py-2 text-center;
+}
+
+.site-header {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    background: white;
+    height: 70px;
+    border: 1px solid black ;
+    margin: 1.5%;
+    
+
+  @apply bg-white border-b border-gray-100 px-8 py-3 flex items-center justify-between relative w-full h-24 select-none;
+}
+
+
+/* This absolutely pins your image container dead center */
+.nav-logo {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center;
+}
+
+.cart-badge {
+  @apply text-sm font-bold text-gray-900 ml-1;
+}
+
+.hero-section {
+  @apply bg-[#0096db] text-white min-h-[500px] flex items-center px-12 py-16 relative overflow-hidden;
+}
+
+.hero-title {
+    margin-top: 200px;
+    font-size: 3rem;
+    color: aliceblue;
+  @apply text-5xl md:text-6xl font-serif leading-tight;
+}
+
+.hero-btn {
+    border: 2px solid black;
+    width: 140px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1e1b4b;
+    color: aliceblue;
+  @apply bg-[#1e1b4b] hover:bg-[#110f2e] text-white font-semibold py-3 px-8 rounded-full transition duration-300;
+}
+.col3{
+    display: flex;
+    
+}
